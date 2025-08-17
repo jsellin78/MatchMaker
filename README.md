@@ -1,16 +1,21 @@
-# MatchMaker-ai
-=======
 
-# MatchMaker
+## MatchMaker-ai
 
-## Prerequisites
+An AI-powered drink recommendation app with a React frontend, Flask backend, and OpenAI integration.
+
+---
+
+## 📋 Prerequisites
 - Node.js (via [NVM](https://github.com/nvm-sh/nvm))
 - Python 3.x (for `bartender.py`)
 - pip (Python package manager)
 - nginx (for serving the frontend)
 - OpenAI API key (for GPT integration)
 
-## Setup, Build, Deploy & Run
+---
+
+
+## ⚙️ Setup, Build, Deploy & Run
 
 ```bash
 # 1. Install and use the correct Node.js version
@@ -31,11 +36,12 @@ sudo mv ~/MatchMaker/build/* /var/www/html/ \
   && sudo mv images /var/www/html/images \
   && sudo mv systembolagetdict.json main_drinks.json /etc/nginx/sites-available/
 
+
 # 6. Move nginx config into place and restart nginx
-sudo mv nginx.conf /etc/nginx/sites-available/matchmaker
-sudo ln -s /etc/nginx/sites-available/matchmaker /etc/nginx/sites-enabled/
-sudo nginx -t
-sudo systemctl restart nginx
+sudo mv nginx.conf /etc/nginx/sites-available/matchmaker \
+  && sudo ln -s /etc/nginx/sites-available/matchmaker /etc/nginx/sites-enabled/ \
+  && sudo nginx -t \
+  && sudo systemctl restart nginx
 
 # 7. Export your OpenAI API key
 export OPENAI_API_KEY="YOUR-OPENAI-KEY"
