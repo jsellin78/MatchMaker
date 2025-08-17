@@ -1,0 +1,43 @@
+.logo {
+  /* border: 2px solid yellow; */
+  display: flex;
+  align-items: center;
+  flex-basis: 13%;
+  width: 100%;
+}
+
+.logo-image {
+  z-index: 10 !important;
+  width: 80%;
+  max-width: 170px;
+  margin-left: 31px !important;
+  margin-bottom: 0 !important;
+}
+
+.sound {
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 150px;
+  margin-bottom: 15px;
+}
+
+.sound:hover {
+  background-color: rgba(245, 245, 245, 0.582);
+}
+
+/* Mobile Settings */
+
+@media only screen and (min-width: 340px) and (max-width: 950px)
+    and (min-height: 340px) and (max-height: 950px)
+    and (orientation: landscape)
+    and (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 2dppx) {
+
+  .logo-image {
+    width: 35%;
+    max-width: 200px;
+    margin-left: 10px !important;
+    margin-bottom: 20px !important;
+  }
+}

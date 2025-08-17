@@ -1,0 +1,257 @@
+.button-box {
+  display: grid;
+  justify-content: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 10px;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.button-box.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.answer-button,
+.recommend-button,
+.submit-button {
+  color: black !important;
+  text-transform: none !important;
+}
+
+.answer-button {
+  width: 100%;
+  height: 80px;
+  font-size: 14px;
+  border-radius: 15px !important;
+  cursor: pointer;
+  background-color: #D5BC94;
+  transition: background-color 0.3s;
+}
+
+.answer-button:not(.selected) {
+  background-color: #D5BC94;
+}
+
+.answer-button:not(.selected):hover {
+  background-color: #FFE2B2;
+}
+
+.selected {
+  background-color: #FFE2B2;
+  box-shadow: 0px 1px 5px 0px #0000001F;
+}
+
+.choice-header {
+  /* border: 2px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.choice-header.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.choice-header p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.reset-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.reset-button-container.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.reset-button {
+  background: #D5BC94;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px 0px #0000001F;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background: #FFE2B2;
+}
+
+.button-box-container {
+  /* border: 2px solid blue; */
+  justify-content: center !important;
+}
+
+.button-box-wrapper {
+  /* border: 2px solid red; */
+  width: 100%;
+}
+
+.recommend-button-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.recommend-button {
+  background-color: #D5BC94 !important;
+  font-size: 16px !important;
+  color: black !important;
+  border-radius: 35px !important;
+  padding: 10px 20px !important;
+  width: 160px;
+  transition: background-color 0.3s !important;
+  text-transform: none !important;
+}
+
+.recommend-button:hover {
+  background-color: #FFE2B2 !important;
+}
+
+.submit-button {
+  padding: 0 36px !important;
+  background-color: #9F9B9378;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  color: #0000005E !important;
+  text-transform: none !important;
+}
+
+.submit-button.active {
+  background-color: #FFE2B2;
+  cursor: pointer;
+  color: black !important;
+}
+
+.submit-button.disabled {
+  cursor: not-allowed;
+  box-shadow: none !important;
+}
+
+.styled-button {
+  background-color: #D5BC94;
+  color: black !important;
+  border-radius: 15px !important;
+  text-transform: none !important;
+}
+
+.styled-button:hover {
+  background-color: #FFE2B2;
+}
+
+/* Galaxy Tab A8 Settings */
+
+@media only screen and (min-width: 1920px) and (min-height: 1200px) and (orientation: landscape) {
+  p {
+    font-size: 25px !important;
+  }
+
+  .button-box {
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px;
+  }
+
+  .recommend-button {
+    font-size: 20px !important;
+    border-radius: 35px !important;
+    padding: 10px 20px !important;
+    width: 200px;
+  }
+
+  .answer-button {
+    height: 120px;
+  }
+
+  .answer-button, .reset-button, .submit-button {
+    font-size: 25px !important;
+  }
+
+  .reset-button {
+    font-size: 50px !important;
+    border-radius: 15px !important;
+    width: 90px;
+    height: 90px;
+  }
+
+  .submit-button {
+    border-radius: 50px !important;
+    padding: 0 85px !important;
+  }
+}
+
+/* Mobile Settings */
+
+@media only screen and (min-width: 340px) and (max-width: 950px)
+    and (min-height: 340px) and (max-height: 950px)
+    and (orientation: landscape)
+    and (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 2dppx) {
+
+  p {
+    font-size: 9px !important;
+  }
+  
+  .button-box {
+    column-gap: 6px;
+    row-gap: 6px;
+    padding: 6px;
+  }
+
+  .recommend-button-wrapper {
+    gap: 6px;
+  }
+
+  .recommend-button {
+    font-size: 10px !important;
+    border-radius: 35px !important;
+    padding: 5px 15px !important;
+    width: 100px;
+  }
+
+  .answer-button {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    font-weight: bold !important;
+    border-radius: 10px !important;
+    height: 35px;
+    font-size: 10px !important;
+  }
+
+  .reset-button {
+    font-size: 16px !important;
+    border-radius: 8px !important;
+    width: 25px;
+    height: 25px;
+  }
+
+  .submit-button {
+    font-size: 10px !important;
+    font-weight: bold !important;
+    padding: 0 20px !important;
+  }
+}
