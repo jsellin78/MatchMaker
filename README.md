@@ -5,6 +5,10 @@ An AI-powered drink recommendation app with a React frontend, Flask backend, and
 
 ---
 
+
+## 🌍 Live Demo
+👉 [Try MatchMaker here](http://78.72.53.78:3005)
+
 ## 📋 Prerequisites
 - Node.js (via [NVM](https://github.com/nvm-sh/nvm))
 - Python 3.x (for `bartender.py`)
@@ -13,7 +17,6 @@ An AI-powered drink recommendation app with a React frontend, Flask backend, and
 - OpenAI API key (for GPT integration)
 
 ---
-
 
 ## ⚙️ Setup, Build, Deploy & Run
 
@@ -56,5 +59,5 @@ python bartender.py
 
 # 9. Access the application
 http://<your-server-ip:3005     # frontend (served by nginx)
-http://<your-server-ip>:5012 # backend (Flask, if accessed directly)
->>>>>>> 8ff6f05 (Update README with combined deployment command)
+=======
+```
