@@ -6,7 +6,7 @@ An AI-powered drink recommendation app with a React frontend, Flask backend, and
 ---
 
 
-## 🌍 Live Demo
+## Live Demo
 👉 [Try MatchMaker here](http://78.72.53.78:3005)
 
 ## 📋 Prerequisites
