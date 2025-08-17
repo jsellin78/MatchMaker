@@ -61,4 +61,8 @@ python bartender.py
 # 7. Access the application
 ```
 http://<your-ip:3005
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 85d8ff0 (Update README)
