@@ -21,12 +21,17 @@ An AI-powered drink recommendation app with a React frontend, Flask backend, and
 # 1. Install and use the correct Node.js version
 nvm install 20.5.0
 nvm use 20.5.0
+bash
+```
 
 # 2. Install frontend dependencies from package.json
+```
 npm install
-
+```
 # 3. Install backend dependencies
+```
 pip install -r requirements.txt
+```
 
 # 4. Build the React frontend
 npm run build
